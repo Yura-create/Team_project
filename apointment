@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Appointment Form</title>
+    <style>
+	a{
+	color: #fff;
+	text-decoration: none;
+}
+        body {
+            background-color: #e3fffe;
+        }
+        form {
+            background-color: #FFFFFF;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            margin: auto;
+        }
+	h1 {
+	font-family: 'PT Sans Caption', sans-serif;
+            text-align: center;
+        }
+        input[type="text"], input[type="tel"] {
+font-family: 'PT Sans Caption', sans-serif;
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 2px solid #33c4c0;
+        }
+.btn{
+	display: inline-block;
+    vertical-align: top;
+    padding: 20px 55px;
+
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+
+	font-family: 'PT Sans Caption', sans-serif; 
+    font-size: 20px;
+    color: #e3fffe;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: background 0.2s linear;
+	text-align: center;
+	background: #33c4c0;
+}
+.btn:hover{
+	background: #e3fffe;
+	color: #33c4c0;
+	transition: background 0.2s linear;
+}
+      
+    </style>
+</head>
+<body>
+<h1>Make an Apointment</h1>
+    <form action="/submit" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="surname">Surname:</label><br>
+        <input type="text" id="surname" name="surname"><br>
+        <label for="petname">Pet's Name:</label><br>
+        <input type="text" id="petname" name="petname"><br>
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone"><br>
+        <label for="illness">Pet's Illness:</label><br>
+        <input type="text" id="illness" name="illness"><br><br>
+        <a class="btn" href="https://www.google.com">Submit</a>
+    </form> 
+</body>
+</html>
