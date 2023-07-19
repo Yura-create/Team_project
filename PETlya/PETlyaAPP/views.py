@@ -13,11 +13,11 @@ def appoint(request):
         phone_number = request.POST['phone']
         problem = request.POST['illness']
 
-        if len(name) is None:
-            return HttpResponse('<h1>Error!<br>You dont write your name.</h1>')
-
-        new_appointment = Appointment(name=name, surname=surname, pet_name=pet_name, phone_number=phone_number, problem=problem)
-        new_appointment.save()
+        if len(pet_name) or len(phone_number) < 1:
+            return HttpResponse('<h1>Error! You forget to write something.</h1>')
+        else:
+            new_appointment = Appointment(name=name, surname=surname, pet_name=pet_name, phone_number=phone_number, problem=problem)
+            new_appointment.save()
 
     return render(request, 'appointment.html')
 
