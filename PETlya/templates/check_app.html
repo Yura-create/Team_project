@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<ul class="list__app">
+    {% for app in appointments %}
+    <li>
+        <h2>{{ app.pet_name }}</h2>
+        <p>{{ app.problem }}</p>
+        <p><strong>Name:</strong> {{ app.name }} {{app.surname }}. <strong>Number:</strong> {{ app.phone_number }}</p>
+        <hr>
+    </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
