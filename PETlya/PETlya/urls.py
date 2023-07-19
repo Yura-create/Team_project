@@ -22,4 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home),
     path('make_appointment/', appoint),
+    path('UA/', home_ua),
 ]

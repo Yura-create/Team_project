@@ -5,6 +5,9 @@ from .models import Appointment
 def home(request):
     return render(request, 'index.html')
 
+def home_ua(request):
+    return render(request, 'index_ua.html')
+
 def appoint(request):
     if request.method == 'POST':
         name = request.POST['name']
