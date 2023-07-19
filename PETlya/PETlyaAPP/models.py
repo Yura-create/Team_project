@@ -7,3 +7,5 @@ class Appointment(models.Model):
     phone_number = models.CharField(max_length=13)
     problem = models.TextField(blank=True)
 
+    def __str__(self):
+        return self.pet_name
