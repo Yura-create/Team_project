@@ -3,7 +3,7 @@ Team work for the university. This project was created by Ільченко Юр�
 
 We created the website for a vet clinic called PETlya.
 
-In this project, we've used HTML, CSS(front-end), and Python with the framework Django(for back-end). In our repository, you can see a lot of directories and files, such as:
+In this project(PETlya dir), we've used HTML, CSS(front-end), and Python with the framework Django(for back-end). In our repository, you can see a lot of directories and files, such as:
 
 PETlya(directory): one of the main directories, which includes .py files for editing the project and supporting its workability.
 
