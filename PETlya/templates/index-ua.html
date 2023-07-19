@@ -1,0 +1,155 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico|Ubuntu:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+	<link rel="icon" type="images/logo1.png" href="{% static 'img/logo1.png' %}">
+	<title>PETlya</title>
+</head>
+<body>
+	
+	<!-- HEADER -->
+
+	<header id="start">
+	
+		<div class="header__section">
+			<div class="logo">
+				<a class="first__word">PET<span class="second__word">lya</span></a>
+			</div>
+		</div>
+
+		<div class="header__section">
+			<div class="header__item">
+				<a href="#story">Про нас</a>
+			</div>
+			<div class="header__item">
+				<a href="#services">Послуги</a>
+			</div>
+			<div class="header__item">
+				<a href="#veterinarians">Наші фахівці</a>
+			</div>
+			<div class="header__item">
+				<a href="#map">Ми на мапі</a>
+			</div>
+		</div>
+	</header>
+
+<!-- INTRO OF THE WEBSITE -->
+
+	<div class="intro">
+		<div class="intro__black">
+			<div class="intro__inner">
+					<h1 class="intro__title">PETlya</h1>
+					<p class="intro__subtitle">Ветеринарна клініка</p>
+					<a href="make_appointment/" class="btn">Make an appointment</a>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- SOME INFORMATION ABOUT OUR COMPANY -->
+
+	<div class="story" id="story">
+		<div class="story__item">
+			<div class="story__text">
+				<h2 class="story__title">Ветеринарна клініка PETlya:<br>Виняткова турбота за вашими домашніми улюбленцями</h2>
+			</div>
+
+			<div class="story__content">
+				<p  class="story__par">
+					Ласкаво просимо до Ветеринарної клініки PETlya, Вашого надійного партнера по догляду. Наша віддана команда ветеринарів і персоналу дбають про здоров’я та щастя ваших улюблених домашніх тварин. Від профілактичних до екстрених служб, ми пропонуємо повний спектр ветеринарної допомоги, розробленої відповідно до унікальних потреб ваших пухнастих друзів. Завдяки нашому сучасному обладнанню та індивідуальному підходу ви можете довіряти ветеринарній клініці PETlya у наданні виняткової допомоги та підтримки вашим вихованцям на кожному етапі їхнього життя.
+				</p>
+			</div>
+
+		</div>
+	</div>
+
+
+	<!-- SERVICES THAT WE CAN DO FOR OUR CUSTOMERS -->
+
+	<div class="services" id="services">
+
+		<div class="services__text">
+			<h2 class="services__title">Послуги</h2>
+		</div>
+			<div class="services__item">
+				<img src="{% static 'img/num-1.png' %}" alt="" class="num">
+				<p class="services__text">Профілактичний догляд: ми наголошуємо на важливості регулярних оглядів, вакцинації та профілактики паразитів, щоб ваші домашні тварини були здоровими та щасливими.</p>
+			</div>
+			<div class="services__item">
+				<img src="{% static 'img/num-2.png' %}" alt="" class="num">
+				<p class="services__text">Діагностичні послуги: наші передові діагностичні інструменти дозволяють нам точно ідентифікувати та лікувати різні захворювання. Від аналізів крові до рентгена ми забезпечуємо комплексну оцінку здоров’я вашого вихованця.</p>
+			</div>
+			<div class="services__item">
+				<img src="{% static 'img/num-3.png' %}" alt="" class="num">
+				<p class="services__text">Хірургічні процедури: наш сучасний хірургічний кабінет обладнаний для виконання широкого спектру процедур, включаючи стерилізацію, операції на м’яких тканинах і ортопедичні операції. Ми надаємо пріоритет безпеці пацієнтів і використовуємо новітні методики та протоколи анестезії.</p>
+			</div>
+			<div class="services__item">
+				<img src="{% static 'img/num-4.png' %}" alt="" class="num">
+				<p class="services__text">Розміщення домашніх тварин та грумінг: ми пропонуємо комфортне та безпечне приміщення для розміщення, гарантуючи, що ваш вихованець отримає уважний догляд під час вашої відсутності. Наші послуги з догляду допоможуть вашому пухнастому компаньйону виглядати та почуватися якнайкраще.</p>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- ABOUT OUR TEAM -->
+
+	<div class="veterinarians" id="veterinarians">
+		<div class="veterinarians__item">
+			<img src="{% static 'img/1g.jpg' %}">
+			<h2>Юрій Ільченко</h2>
+			<p>
+				Моя діяльність в клініці PETlya пов'язана з посттравматичною реабілітацією, також можу зробити для вас сайт)
+			</p>
+		</div>
+		<div class="veterinarians__item">
+			<img src="{% static 'img/2g.jpg' %}">
+			<h2>Маргарита Круглік</h2>
+			<p>
+				У Ветеринарній клініці PETlya я займаюся грумінгом та фарбуванням хутра! Я подбаю про те, щоб ваші пухнасті друзі виглядали та почувалися якнайкраще.
+			</p>
+		</div>
+		<div class="veterinarians__item">
+			<img src="{% static 'img/3g.jpg' %}">
+			<h2>Дар'я Вірянська</h2>
+			<p>
+				Я молодший ветеринарний лікар. Я амбітна та присвячена професіоналка з великим бажанням надавати догляд і медичну допомогу тваринам якнайкраще.
+			</p>
+		</div>
+		<div class="veterinarians__item">
+			<img src="{% static 'img/4g.jpg' %}">
+			<h2>Тимур Ухін</h2>
+			<p>
+				Привіт, я доктор Тимур Ухін, ветеринар Клініки PETlya. Я люблю тварин і маю 10 років досвіду в медицині та хірургії дрібних тварин. Також я працюю з екзотичними тваринами та дикою природою. Я дбаю про добробут тварин і освіту, і мені подобається ділитися своїми знаннями з іншими. 
+			</p>
+		</div>
+	</div>
+
+	<!-- MAP FROM GOOGLEMAP -->
+
+	<div id="map" class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=2048&amp;height=400&amp;hl=en&amp;q=National University of Life and Environmental Sciences of Ukraine&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://connectionsgame.org/">Connections NYT</a></div><style>.mapouter{position:relative;text-align:right;width:2048px;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:2048px;height:400px;}.gmap_iframe {width:2048px!important;height:400px!important;}</style></div>
+	
+	<!-- FOOTER -->
+
+	<footer>
+		<nav>
+			<a href="#story">Про нас</a>
+			<a href="#discharge">Послуги</a>
+			<a href="#veterinarians">Наші фахівці</a>
+			<a href="#map">Ми на мапі</a>
+		</nav>
+		<div class="logo_f">
+			<a class="first__word">PET<span class="second__word">lya</span></a>
+		</div>
+		<div class="lang">
+			<a href="index-ua.html">Українська</a>
+			<a href="index.html">English</a>
+		</div>
+		<p>&copy;2023 All rights reserved&trade;</p>
+
+	</footer>
+</body>
+</html>
