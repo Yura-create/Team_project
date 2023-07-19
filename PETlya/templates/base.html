@@ -1,0 +1,17 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico|Ubuntu:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+	<link rel="icon" type="images/logo1.png" href="{% static 'img/logo1.png' %}">
+	<title>{{ title }}</title>
+</head>
+<body>
+    {% block content %}
+
+    {% endblock %}
+</body>
+</html>

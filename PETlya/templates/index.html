@@ -1,16 +1,6 @@
-{% load static %}
+{% extends 'base.html' %}
 
-<!DOCTYPE html>
-<html lang="eng">
-<head>
-	<meta charset="UTF-8">
-	<link href="https://fonts.googleapis.com/css?family=Pacifico|Ubuntu:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
-	<link rel="icon" type="images/logo1.png" href="{% static 'img/logo1.png' %}">
-	<title>PETlya</title>
-</head>
-<body>
-	
+{% block content %}
 	<!-- HEADER -->
 
 	<header id="start">
@@ -76,19 +66,19 @@
 			<h2 class="services__title">Services</h2>
 		</div>
 			<div class="services__item">
-				<img src="{% static 'img/num-1.png' %}" alt="" class="num">
+				<img src="static/img/num-1.png" alt="" class="num">
 				<p class="services__text">Preventive Care: We emphasize the importance of regular check-ups, vaccinations, and parasite prevention to keep your pets healthy and happy.</p>
 			</div>
 			<div class="services__item">
-				<img src="{% static 'img/num-2.png' %}" alt="" class="num">
+				<img src="static/img/num-2.png" alt="" class="num">
 				<p class="services__text">Diagnostic Services: Our advanced diagnostic tools enable us to accurately identify and treat various health conditions. From blood tests to X-rays, we ensure a comprehensive evaluation of your pet's health.</p>
 			</div>
 			<div class="services__item">
-				<img src="{% static 'img/num-3.png' %}" alt="" class="num">
+				<img src="static/img/num-3.png" alt="" class="num">
 				<p class="services__text">Surgical Procedures: Our modern surgical suite is equipped to perform a wide range of procedures, including spaying/neutering, soft tissue surgeries, and orthopedic surgeries. We prioritize patient safety and utilize the latest techniques and anesthesia protocols.</p>
 			</div>
 			<div class="services__item">
-				<img src="{% static 'img/num-4.png' %}" alt="" class="num">
+				<img src="static/img/num-4.png" alt="" class="num">
 				<p class="services__text">Pet Boarding and Grooming: We offer a comfortable and secure boarding facility, ensuring your pet receives attentive care during your absence. Our grooming services help keep your furry companion looking and feeling their best.</p>
 			</div>
 		</div>
@@ -99,28 +89,28 @@
 
 	<div class="veterinarians" id="veterinarians">
 		<div class="veterinarians__item">
-			<img src="{% static 'img/1g.jpg' %}">
+			<img src="static/img/1g.jpg">
 			<h2>Yurii Ilchenko</h2>
 			<p>
 				My occupation in PETlya Clinic is related with post-traumatic rehabilitation, also can make a website for you)
 			</p>
 		</div>
 		<div class="veterinarians__item">
-			<img src="{% static 'img/2g.jpg' %}">
+			<img src="static/img/2g.jpg">
 			<h2>Marharyta Kruhlik</h2>
 			<p>
 				At PETlya Veterinary Clinic, I work wonders with grooming and fur dyeing! With a passion for pets and a skilled touch, I'll have your furry friends looking and feeling their absolute best.
 			</p>
 		</div>
 		<div class="veterinarians__item">
-			<img src="{% static 'img/3g.jpg' %}">
+			<img src="static/img/3g.jpg">
 			<h2>Darina Virianska</h2>
 			<p>
 				I am a junior vet, an ambitious and dedicated professional with a strong desire to provide care and medical assistance to animals in the best possible way. 
 			</p>
 		</div>
 		<div class="veterinarians__item">
-			<img src="{% static 'img/4g.jpg' %}">
+			<img src="static/img/4g.jpg">
 			<h2>Timur Ukhin</h2>
 			<p>
 				Hi, I’m Dr. Timur Ukhin, a veterinarian at the Animal Care Clinic in Kyiv. I love animals and I have 10 years of experience in small animal medicine and surgery. I also work with exotic pets and wildlife. I care about animal welfare and education, and I like to share my knowledge with others. 
@@ -151,5 +141,4 @@
 		<p>&copy;2023 All rights reserved&trade;</p>
 
 	</footer>
-</body>
-</html>
+{% endblock %}

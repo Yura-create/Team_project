@@ -1,16 +1,6 @@
-{% load static %}
+{% extends 'base.html' %}
 
-<!DOCTYPE html>
-<html lang="eng">
-<head>
-	<meta charset="UTF-8">
-	<link href="https://fonts.googleapis.com/css?family=Pacifico|Ubuntu:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
-	<link rel="icon" type="images/logo1.png" href="{% static 'img/logo1.png' %}">
-	<title>PETlya</title>
-</head>
-<body>
-	
+{% block content %}
 	<!-- HEADER -->
 
 	<header id="start">
@@ -75,19 +65,19 @@
 			<h2 class="services__title">Послуги</h2>
 		</div>
 			<div class="services__item">
-				<img src="{% static 'img/num-1.png' %}" alt="" class="num">
+				<img src="/static/img/num-1.png" alt="" class="num">
 				<p class="services__text">Профілактичний догляд: ми наголошуємо на важливості регулярних оглядів, вакцинації та профілактики паразитів, щоб ваші домашні тварини були здоровими та щасливими.</p>
 			</div>
 			<div class="services__item">
-				<img src="{% static 'img/num-2.png' %}" alt="" class="num">
+				<img src="/static/img/num-2.png" alt="" class="num">
 				<p class="services__text">Діагностичні послуги: наші передові діагностичні інструменти дозволяють нам точно ідентифікувати та лікувати різні захворювання. Від аналізів крові до рентгена ми забезпечуємо комплексну оцінку здоров’я вашого вихованця.</p>
 			</div>
 			<div class="services__item">
-				<img src="{% static 'img/num-3.png' %}" alt="" class="num">
+				<img src="/static/img/num-3.png" alt="" class="num">
 				<p class="services__text">Хірургічні процедури: наш сучасний хірургічний кабінет обладнаний для виконання широкого спектру процедур, включаючи стерилізацію, операції на м’яких тканинах і ортопедичні операції. Ми надаємо пріоритет безпеці пацієнтів і використовуємо новітні методики та протоколи анестезії.</p>
 			</div>
 			<div class="services__item">
-				<img src="{% static 'img/num-4.png' %}" alt="" class="num">
+				<img src="/static/img/num-4.png" alt="" class="num">
 				<p class="services__text">Розміщення домашніх тварин та грумінг: ми пропонуємо комфортне та безпечне приміщення для розміщення, гарантуючи, що ваш вихованець отримає уважний догляд під час вашої відсутності. Наші послуги з догляду допоможуть вашому пухнастому компаньйону виглядати та почуватися якнайкраще.</p>
 			</div>
 		</div>
@@ -98,28 +88,28 @@
 
 	<div class="veterinarians" id="veterinarians">
 		<div class="veterinarians__item">
-			<img src="{% static 'img/1g.jpg' %}">
+			<img src="/static/img/1g.jpg">
 			<h2>Юрій Ільченко</h2>
 			<p>
 				Моя діяльність в клініці PETlya пов'язана з посттравматичною реабілітацією, також можу зробити для вас сайт)
 			</p>
 		</div>
 		<div class="veterinarians__item">
-			<img src="{% static 'img/2g.jpg' %}">
+			<img src="/static/img/2g.jpg">
 			<h2>Маргарита Круглік</h2>
 			<p>
 				У Ветеринарній клініці PETlya я займаюся грумінгом та фарбуванням хутра! Я подбаю про те, щоб ваші пухнасті друзі виглядали та почувалися якнайкраще.
 			</p>
 		</div>
 		<div class="veterinarians__item">
-			<img src="{% static 'img/3g.jpg' %}">
+			<img src="/static/img/3g.jpg">
 			<h2>Дар'я Вірянська</h2>
 			<p>
 				Я молодший ветеринарний лікар. Я амбітна та присвячена професіоналка з великим бажанням надавати догляд і медичну допомогу тваринам якнайкраще.
 			</p>
 		</div>
 		<div class="veterinarians__item">
-			<img src="{% static 'img/4g.jpg' %}">
+			<img src="/static/img/4g.jpg">
 			<h2>Тимур Ухін</h2>
 			<p>
 				Привіт, я доктор Тимур Ухін, ветеринар Клініки PETlya. Я люблю тварин і маю 10 років досвіду в медицині та хірургії дрібних тварин. Також я працюю з екзотичними тваринами та дикою природою. Я дбаю про добробут тварин і освіту, і мені подобається ділитися своїми знаннями з іншими. 
@@ -150,5 +140,4 @@
 		<p>&copy;2023 All rights reserved&trade;</p>
 
 	</footer>
-</body>
-</html>
+{% endblock %}
