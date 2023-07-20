@@ -24,4 +24,5 @@ urlpatterns = [
     path('make_appointment/', appoint),
     path('UA/', home_ua),
     path('all_appointments/', check_app),
+    path('success/', success),
 ]
